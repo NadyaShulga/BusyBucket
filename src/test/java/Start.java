@@ -9,6 +9,11 @@ public class Start {
     @Test
     public void start(){
         wd = new ChromeDriver();
-        wd.get("https://www.busybucket.io/");
+        wd.get("https://www.busybucket.io/"); // without history
+        //wd.navigate().to("https://www.busybucket.io/"); // with history
+
+        wd.close();
+        //wd.quit();
+
     }
 }
